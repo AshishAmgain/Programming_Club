@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming Club Resources - Learning materials, tutorials, and tools for developers">
+    <meta name="keywords" content="resources, tutorials, learning, programming, tools, books">
+    <title>Resources - Programming Club</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">💻</div>
+                    <h1>Programming Club</h1>
+                </div>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="membership.html" class="nav-link">Membership</a>
+                    <a href="resources.html" class="nav-link">Resources</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="future.html" class="nav-link">Future</a>
+                </nav>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learning Resources</h1>
+                <p>Curated collection of the best programming tutorials, tools, books, and learning materials to accelerate your development journey</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Resource Categories</h2>
+                <p>Browse through different types of learning materials</p>
+            </div>
+            
+            <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-xl);">
+                <button class="resource-category-btn active" data-category="all">All Resources</button>
+                <button class="resource-category-btn" data-category="tutorials">Tutorials</button>
+                <button class="resource-category-btn" data-category="books">Books</button>
+                <button class="resource-category-btn" data-category="tools">Tools</button>
+                <button class="resource-category-btn" data-category="courses">Online Courses</button>
+                <button class="resource-category-btn" data-category="practice">Practice Platforms</button>
+            </div>
+            
+            <div class="card-grid">
+                <!-- Tutorials Category -->
+                <div class="card" data-category="tutorials">
+                    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📚</div>
+                    <h3>MDN Web Docs</h3>
+                    <p>Comprehensive web development documentation and tutorials from Mozilla. Perfect for learning HTML, CSS, and JavaScript.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Free</span>
+                        <span style="background: var(--secondary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Beginner</span>
+                    </div>
+                    <a href="https://developer.mozilla.org" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Visit Resource</a>
+                </div>
+                
+                <div class="card" data-category="tutorials">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎯</div>
+                    <h3>freeCodeCamp</h3>
+                    <p>Interactive coding lessons and projects covering web development, data science, and machine learning. Earn certificates upon completion.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Free</span>
+                        <span style="background: var(--success-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">All Levels</span>
+                    </div>
+                    <a href="https://freecodecamp.org" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Visit Resource</a>
+                </div>
+                
+                <!-- Books Category -->
+                <div class="card" data-category="books">
+                    <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📖</div>
+                    <h3>"Clean Code" by Robert Martin</h3>
+                    <p>A must-read book that teaches you how to write clean, maintainable, and professional code. Essential for any serious developer.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--warning-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Paid</span>
+                        <span style="background: var(--accent-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Intermediate</span>
+                    </div>
+                    <a href="#" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Learn More</a>
+                </div>
+                
+                <div class="card" data-category="books">
+                    <div class="card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📖</div>
+                    <h3>"Python Crash Course" by Eric Matthes</h3>
+                    <p>Perfect for beginners learning Python. Covers fundamentals and includes hands-on projects to reinforce learning.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--warning-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Paid</span>
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Beginner</span>
+                    </div>
+                    <a href="#" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Learn More</a>
+                </div>
+                
+                <!-- Tools Category -->
+                <div class="card" data-category="tools">
+                    <div class="card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🔧</div>
+                    <h3>Visual Studio Code</h3>
+                    <p>Free, powerful code editor with excellent extensions and debugging capabilities. Perfect for web development and many other languages.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Free</span>
+                        <span style="background: var(--success-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">All Levels</span>
+                    </div>
+                    <a href="https://code.visualstudio.com" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Download</a>
+                </div>
+                
+                <div class="card" data-category="tools">
+                    <div class="card-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🔧</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Essential version control tools for collaborative development. Learn to track changes, collaborate with others, and manage your codebase.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Free</span>
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Beginner</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Get Started</a>
+                </div>
+                
+                <!-- Online Courses Category -->
+                <div class="card" data-category="courses">
+                    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎓</div>
+                    <h3>Coursera - Machine Learning</h3>
+                    <p>Stanford's famous machine learning course by Andrew Ng. Comprehensive introduction to ML algorithms and practical applications.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--warning-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Paid</span>
+                        <span style="background: var(--accent-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Intermediate</span>
+                    </div>
+                    <a href="https://coursera.org" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">View Course</a>
+                </div>
+                
+                <div class="card" data-category="courses">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎓</div>
+                    <h3>Udemy - Complete Web Development</h3>
+                    <p>Comprehensive web development bootcamp covering frontend and backend technologies. Includes real-world projects and portfolio building.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--warning-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Paid</span>
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Beginner</span>
+                    </div>
+                    <a href="https://udemy.com" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">View Course</a>
+                </div>
+                
+                <!-- Practice Platforms Category -->
+                <div class="card" data-category="practice">
+                    <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">💻</div>
+                    <h3>LeetCode</h3>
+                    <p>Practice coding problems and prepare for technical interviews. Features problems from easy to hard with detailed solutions and discussions.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Free</span>
+                        <span style="background: var(--success-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">All Levels</span>
+                    </div>
+                    <a href="https://leetcode.com" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Start Practicing</a>
+                </div>
+                
+                <div class="card" data-category="practice">
+                    <div class="card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">💻</div>
+                    <h3>HackerRank</h3>
+                    <p>Practice coding skills, prepare for interviews, and compete with other developers. Offers challenges in multiple programming domains.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Free</span>
+                        <span style="background: var(--success-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">All Levels</span>
+                    </div>
+                    <a href="https://hackerrank.com" target="_blank" class="cta-button" style="margin-top: var(--spacing-md); display: inline-block;">Start Practicing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Learning Paths</h2>
+                <p>Structured learning paths for different programming domains</p>
+            </div>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <div class="card">
+                    <h3 style="color: var(--primary-color);">🚀 Web Development Path</h3>
+                    <ol style="margin: var(--spacing-md) 0; padding-left: var(--spacing-lg);">
+                        <li style="margin-bottom: var(--spacing-sm);">Learn HTML & CSS fundamentals</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Master JavaScript basics and ES6+</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Build responsive layouts with CSS Grid/Flexbox</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Learn a frontend framework (React/Vue)</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Understand backend development (Node.js)</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Database design and management</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Deploy your first web application</li>
+                    </ol>
+                    <p><strong>Estimated Time:</strong> 6-12 months</p>
+                    <p><strong>Difficulty:</strong> Beginner to Intermediate</p>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: var(--secondary-color);">🤖 Data Science Path</h3>
+                    <ol style="margin: var(--spacing-md) 0; padding-left: var(--spacing-lg);">
+                        <li style="margin-bottom: var(--spacing-sm);">Learn Python programming fundamentals</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Master data manipulation with Pandas</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Learn data visualization (Matplotlib, Seaborn)</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Understand statistics and probability</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Learn machine learning algorithms</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Work with real datasets and projects</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Deploy ML models to production</li>
+                    </ol>
+                    <p><strong>Estimated Time:</strong> 8-15 months</p>
+                    <p><strong>Difficulty:</strong> Intermediate to Advanced</p>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: var(--accent-color);">📱 Mobile Development Path</h3>
+                    <ol style="margin: var(--spacing-md) 0; padding-left: var(--spacing-lg);">
+                        <li style="margin-bottom: var(--spacing-sm);">Learn programming fundamentals</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Choose platform: iOS (Swift) or Android (Kotlin)</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Learn UI/UX design principles</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Master platform-specific frameworks</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Learn cross-platform development (React Native/Flutter)</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Understand app store deployment</li>
+                        <li style="margin-bottom: var(--spacing-sm);">Build and publish your first app</li>
+                    </ol>
+                    <p><strong>Estimated Time:</strong> 6-12 months</p>
+                    <p><strong>Difficulty:</strong> Beginner to Intermediate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Search Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Resources</h2>
+                <p>Search through our curated collection of programming resources</p>
+            </div>
+            
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <div style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+                    <input type="text" id="resource-search" placeholder="Search for resources..." style="flex: 1; padding: var(--spacing-sm); border: 2px solid var(--border-color); border-radius: var(--radius-md);">
+                    <button class="form-button" onclick="searchResources()">Search</button>
+                </div>
+                
+                <div style="display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                    <select id="difficulty-filter" style="padding: var(--spacing-xs); border: 2px solid var(--border-color); border-radius: var(--radius-sm);">
+                        <option value="">All Difficulties</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    
+                    <select id="cost-filter" style="padding: var(--spacing-xs); border: 2px solid var(--border-color); border-radius: var(--radius-sm);">
+                        <option value="">All Costs</option>
+                        <option value="free">Free</option>
+                        <option value="paid">Paid</option>
+                    </select>
+                    
+                    <select id="type-filter" style="padding: var(--spacing-xs); border: 2px solid var(--border-color); border-radius: var(--radius-sm);">
+                        <option value="">All Types</option>
+                        <option value="tutorials">Tutorials</option>
+                        <option value="books">Books</option>
+                        <option value="tools">Tools</option>
+                        <option value="courses">Courses</option>
+                        <option value="practice">Practice</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Programming Club</h3>
+                    <p>Empowering students through programming education, collaboration, and innovation.</p>
+                    <p>📍 Computer Science Building, Room 205</p>
+                    <p>📧 programming.club@university.edu</p>
+                    <p>📱 (555) 123-4567</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="membership.html">Join Us</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <a href="#" target="_blank">Discord</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest events and announcements.</p>
+                    <form style="margin-top: var(--spacing-sm);">
+                        <input type="email" placeholder="Enter your email" style="width: 100%; padding: var(--spacing-xs); border-radius: var(--radius-sm); border: none; margin-bottom: var(--spacing-xs);">
+                        <button type="submit" class="form-button" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Programming Club. All rights reserved. | Designed with ❤️ for the programming community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/faq.js"></script>
+    
+    <script>
+        // Resource filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.resource-category-btn');
+            const resourceCards = document.querySelectorAll('.card[data-category]');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // Filter resource cards
+                    resourceCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+        
+        function searchResources() {
+            const searchTerm = document.getElementById('resource-search').value.toLowerCase();
+            const difficultyFilter = document.getElementById('difficulty-filter').value;
+            const costFilter = document.getElementById('cost-filter').value;
+            const typeFilter = document.getElementById('type-filter').value;
+            
+            const resourceCards = document.querySelectorAll('.card[data-category]');
+            
+            resourceCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const category = card.getAttribute('data-category');
+                
+                let showCard = true;
+                
+                // Search term filter
+                if (searchTerm && !title.includes(searchTerm) && !description.includes(searchTerm)) {
+                    showCard = false;
+                }
+                
+                // Category filter
+                if (typeFilter && category !== typeFilter) {
+                    showCard = false;
+                }
+                
+                // Additional filtering logic can be added here
+                
+                card.style.display = showCard ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html> 

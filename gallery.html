@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming Club Gallery - Photos from events, projects, and memorable moments">
+    <meta name="keywords" content="gallery, photos, projects, events, programming club">
+    <title>Gallery - Programming Club</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">💻</div>
+                    <h1>Programming Club</h1>
+                </div>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="membership.html" class="nav-link">Membership</a>
+                    <a href="resources.html" class="nav-link">Resources</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="future.html" class="nav-link">Future</a>
+                </nav>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Photo Gallery</h1>
+                <p>Relive the amazing moments, projects, and memories from our programming club events and activities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery Categories</h2>
+                <p>Browse through different types of content and memories</p>
+            </div>
+            
+            <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-xl);">
+                <button class="gallery-category-btn active" data-category="all">All Photos</button>
+                <button class="gallery-category-btn" data-category="events">Events</button>
+                <button class="gallery-category-btn" data-category="projects">Projects</button>
+                <button class="gallery-category-btn" data-category="workshops">Workshops</button>
+                <button class="gallery-category-btn" data-category="hackathons">Hackathons</button>
+                <button class="gallery-category-btn" data-category="team">Team</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Events Category -->
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=300&fit=crop" alt="Hackathon 2024">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Hackathon 2024</h4>
+                        <p>48 hours of coding and innovation</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Web Development Workshop">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Web Dev Workshop</h4>
+                        <p>Learning modern web technologies</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Team Coding Challenge">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Team Coding Challenge</h4>
+                        <p>Collaborative problem solving</p>
+                    </div>
+                </div>
+                
+                <!-- Projects Category -->
+                <div class="gallery-item" data-category="projects">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" alt="Student Project Showcase">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Project Showcase</h4>
+                        <p>Innovative student projects</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="projects">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" alt="Mobile App Development">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Mobile App Development</h4>
+                        <p>Building the next big app</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="projects">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Science Project">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Data Science Project</h4>
+                        <p>Analyzing real-world data</p>
+                    </div>
+                </div>
+                
+                <!-- Workshops Category -->
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop" alt="AI Workshop">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>AI Workshop</h4>
+                        <p>Exploring machine learning</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Cybersecurity Training">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Cybersecurity Training</h4>
+                        <p>Learning to protect systems</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Git Workshop">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Git Workshop</h4>
+                        <p>Version control mastery</p>
+                    </div>
+                </div>
+                
+                <!-- Hackathons Category -->
+                <div class="gallery-item" data-category="hackathons">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=300&fit=crop" alt="Hackathon 2023">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Hackathon 2023</h4>
+                        <p>Last year's amazing projects</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="hackathons">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Mini Hackathon">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Mini Hackathon</h4>
+                        <p>Quick 24-hour challenge</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="hackathons">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" alt="Hackathon Winners">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Hackathon Winners</h4>
+                        <p>Celebrating success</p>
+                    </div>
+                </div>
+                
+                <!-- Team Category -->
+                <div class="gallery-item" data-category="team">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Club Leadership Team">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Leadership Team</h4>
+                        <p>Our dedicated officers</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="team">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Team Building">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Team Building</h4>
+                        <p>Building strong bonds</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="team">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop" alt="Faculty Advisors">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: var(--spacing-sm);">
+                        <h4>Faculty Advisors</h4>
+                        <p>Guiding our journey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>Showcasing the best work from our talented members</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📱</div>
+                    <h3>EcoTracker Mobile App</h3>
+                    <p>A sustainability app that helps users track their carbon footprint and suggests eco-friendly alternatives. Built with React Native and Firebase.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">React Native</span>
+                        <span style="background: var(--secondary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Firebase</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🤖</div>
+                    <h3>AI Study Assistant</h3>
+                    <p>An intelligent chatbot that helps students with homework, provides study tips, and creates personalized learning plans using machine learning.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--accent-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">Python</span>
+                        <span style="background: var(--warning-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">TensorFlow</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌐</div>
+                    <h3>Local Business Directory</h3>
+                    <p>A web platform that connects local businesses with customers, featuring reviews, ratings, and booking systems. Built with modern web technologies.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <span style="background: var(--success-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem;">React</span>
+                        <span style="background: var(--primary-color); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-left: var(--spacing-xs);">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Club Highlights</h2>
+                <p>Watch videos from our most memorable events and activities</p>
+            </div>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                <div class="card">
+                    <div style="position: relative; width: 100%; height: 250px; background: var(--bg-secondary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: var(--spacing-sm);">🎥</div>
+                            <p>Hackathon 2024 Highlights</p>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary);">5:32 min</p>
+                        </div>
+                    </div>
+                    <h3>Hackathon 2024 Highlights</h3>
+                    <p>Relive the excitement of our biggest hackathon yet, featuring project demos, team presentations, and the award ceremony.</p>
+                </div>
+                
+                <div class="card">
+                    <div style="position: relative; width: 100%; height: 250px; background: var(--bg-secondary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: var(--spacing-sm);">🎥</div>
+                            <p>Web Development Workshop</p>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary);">12:45 min</p>
+                        </div>
+                    </div>
+                    <h3>Web Development Workshop</h3>
+                    <p>Learn from our comprehensive workshop covering modern web development techniques, tools, and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Programming Club</h3>
+                    <p>Empowering students through programming education, collaboration, and innovation.</p>
+                    <p>📍 Computer Science Building, Room 205</p>
+                    <p>📧 programming.club@university.edu</p>
+                    <p>📱 (555) 123-4567</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="membership.html">Join Us</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <a href="#" target="_blank">Discord</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest events and announcements.</p>
+                    <form style="margin-top: var(--spacing-sm);">
+                        <input type="email" placeholder="Enter your email" style="width: 100%; padding: var(--spacing-xs); border-radius: var(--radius-sm); border: none; margin-bottom: var(--spacing-xs);">
+                        <button type="submit" class="form-button" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Programming Club. All rights reserved. | Designed with ❤️ for the programming community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/faq.js"></script>
+    
+    <script>
+        // Gallery filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.gallery-category-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

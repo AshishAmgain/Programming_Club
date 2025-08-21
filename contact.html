@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Programming Club - Get in touch with our team">
+    <meta name="keywords" content="contact, get in touch, programming club, support">
+    <title>Contact Us - Programming Club</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">💻</div>
+                    <h1>Programming Club</h1>
+                </div>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="membership.html" class="nav-link">Membership</a>
+                    <a href="resources.html" class="nav-link">Resources</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="future.html" class="nav-link">Future</a>
+                </nav>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+                <p>Have questions, suggestions, or want to collaborate? We'd love to hear from you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Information</h2>
+                <p>Multiple ways to reach our team</p>
+            </div>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📍</div>
+                    <h3>Visit Us</h3>
+                    <p><strong>Computer Science Building</strong><br>
+                    Room 205<br>
+                    123 University Drive<br>
+                    University City, ST 12345</p>
+                    <p><strong>Office Hours:</strong><br>
+                    Monday - Friday: 9:00 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📧</div>
+                    <h3>Email Us</h3>
+                    <p><strong>General Inquiries:</strong><br>
+                    <a href="mailto:programming.club@university.edu">programming.club@university.edu</a></p>
+                    <p><strong>Events & Workshops:</strong><br>
+                    <a href="mailto:events@programming.club">events@programming.club</a></p>
+                    <p><strong>Membership:</strong><br>
+                    <a href="mailto:membership@programming.club">membership@programming.club</a></p>
+                    <p><strong>Technical Support:</strong><br>
+                    <a href="mailto:support@programming.club">support@programming.club</a></p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📱</div>
+                    <h3>Call Us</h3>
+                    <p><strong>Main Office:</strong><br>
+                    (555) 123-4567</p>
+                    <p><strong>Club President:</strong><br>
+                    Alex Chen<br>
+                    (555) 123-4568</p>
+                    <p><strong>Events Coordinator:</strong><br>
+                    Marcus Rodriguez<br>
+                    (555) 123-4569</p>
+                    <p><strong>Emergency Contact:</strong><br>
+                    (555) 123-4570</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible</p>
+            </div>
+            
+            <div class="card" style="max-width: 700px; margin: 0 auto;">
+                <form id="contact-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" class="form-select" required>
+                                <option value="">Select a subject...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="membership">Membership Question</option>
+                                <option value="events">Events & Workshops</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" class="form-textarea" required placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="urgency" class="form-label">Urgency Level</label>
+                        <select id="urgency" class="form-select">
+                            <option value="low">Low - No rush</option>
+                            <option value="medium" selected>Medium - Within a week</option>
+                            <option value="high">High - Within 48 hours</option>
+                            <option value="urgent">Urgent - Same day</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-contact" class="form-label">Preferred Contact Method</label>
+                        <select id="preferred-contact" class="form-select">
+                            <option value="email" selected>Email</option>
+                            <option value="phone">Phone Call</option>
+                            <option value="text">Text Message</option>
+                            <option value="discord">Discord</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin: var(--spacing-lg) 0;">
+                        <label style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                            <input type="checkbox" required style="width: auto;">
+                            <span>I agree to the <a href="#" style="color: var(--primary-color);">Privacy Policy</a> and consent to being contacted regarding my inquiry *</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="form-button" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Online Presence Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Connect With Us Online</h2>
+                <p>Follow us on social media and join our online communities</p>
+            </div>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #7289da 0%, #5865f2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">💬</div>
+                    <h3>Discord Server</h3>
+                    <p>Join our Discord community for real-time discussions, coding help, and event updates.</p>
+                    <p><strong>Members:</strong> 500+</p>
+                    <p><strong>Channels:</strong> 15+</p>
+                    <a href="#" target="_blank" class="cta-button">Join Discord</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #333 0%, #666 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🐙</div>
+                    <h3>GitHub Organization</h3>
+                    <p>Explore our open-source projects, contribute code, and collaborate with other developers.</p>
+                    <p><strong>Repositories:</strong> 25+</p>
+                    <p><strong>Contributors:</strong> 100+</p>
+                    <a href="#" target="_blank" class="cta-button">View GitHub</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with our professional network, alumni, and industry partners.</p>
+                    <p><strong>Followers:</strong> 2,000+</p>
+                    <p><strong>Posts:</strong> Weekly</p>
+                    <a href="#" target="_blank" class="cta-button">Follow on LinkedIn</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #1da1f2 0%, #0d8bd9 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🐦</div>
+                    <h3>Twitter</h3>
+                    <p>Stay updated with the latest news, events, and programming tips.</p>
+                    <p><strong>Followers:</strong> 1,500+</p>
+                    <p><strong>Tweets:</strong> Daily</p>
+                    <a href="#" target="_blank" class="cta-button">Follow on Twitter</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📺</div>
+                    <h3>YouTube Channel</h3>
+                    <p>Watch tutorials, event recordings, and programming content.</p>
+                    <p><strong>Subscribers:</strong> 800+</p>
+                    <p><strong>Videos:</strong> 50+</p>
+                    <a href="#" target="_blank" class="cta-button">Subscribe</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-image" style="background: linear-gradient(135deg, #e4405f 0%, #f77737 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📷</div>
+                    <h3>Instagram</h3>
+                    <p>See behind-the-scenes photos and stories from our events.</p>
+                    <p><strong>Followers:</strong> 1,200+</p>
+                    <p><strong>Posts:</strong> 3x/week</p>
+                    <a href="#" target="_blank" class="cta-button">Follow on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-category="contact">
+                    <div class="faq-question">
+                        <h4>How quickly do you respond to messages?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond to all messages within 24-48 hours during business days. For urgent matters, please call our office directly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="contact">
+                    <div class="faq-question">
+                        <h4>Can I schedule a meeting with club leadership?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We're happy to schedule meetings with students, faculty, or potential partners. Please email us with your request and preferred times.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="contact">
+                    <div class="faq-question">
+                        <h4>Do you offer virtual meetings?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We can arrange Zoom, Google Meet, or Discord calls for those who can't visit in person.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="contact">
+                    <div class="faq-question">
+                        <h4>How can I report a technical issue?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For technical issues with our website, events, or systems, please email support@programming.club with detailed information about the problem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Programming Club</h3>
+                    <p>Empowering students through programming education, collaboration, and innovation.</p>
+                    <p>📍 Computer Science Building, Room 205</p>
+                    <p>📧 programming.club@university.edu</p>
+                    <p>📱 (555) 123-4567</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="membership.html">Join Us</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <a href="#" target="_blank">Discord</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest events and announcements.</p>
+                    <form style="margin-top: var(--spacing-sm);">
+                        <input type="email" placeholder="Enter your email" style="width: 100%; padding: var(--spacing-xs); border-radius: var(--radius-sm); border: none; margin-bottom: var(--spacing-xs);">
+                        <button type="submit" class="form-button" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Programming Club. All rights reserved. | Designed with ❤️ for the programming community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html> 
